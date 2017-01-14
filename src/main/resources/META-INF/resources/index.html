@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Flash Card</title>
+<link rel="stylesheet/less" type="text/css" href="css/flashcard.less" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/loader.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body bgcolor=white>
+
+	<article class="flashcard">
+	
+		<a href="add.html" class="button" style="float:left">Add New</a>
+		<a href='javascript:;' onclick='show_next_card();' class="button" style="float:right">Next</a>	
+		<a href='javascript:;' onclick='show_previous_card();' class="button" style="float:right">Previous</a>
+		
+		<input id="flashcard-1" type="checkbox" /> 
+		
+		<label for="flashcard-1">
+			<pre class="prettyprint" style="font-size:15px; border:0px"><section class="front" id="id-front"></section></pre>
+			<pre class="prettyprint" style="font-size:15px; border:0px"><section class="back" id="id-back"></section></pre>
+		</label>
+		
+	</article>
+	
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Flash Card</title>
+<link rel="stylesheet/less" type="text/css" href="css/flashcard.less" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/add.js"></script>
+</head>
+<body bgcolor=white>
+	
+	<article class="flashcard">
+	
+		<textarea id="fData" rows="20" cols="145" style="padding:5px;resize:none;overflow-y: scroll;white-space: pre;" placeholder="Flash Card Front Data"></textarea>
+		<textarea id="bData" rows="20" cols="145" style="padding:5px;resize:none;overflow-y: scroll;white-space: pre;" placeholder="Flash Card Back Data"></textarea>
+		
+		<a href='javascript:;' onclick='submit_card();' class="button" style="float:left; padding:15px">Submit</a>
+	
+	</article>
+	
+</body>
+</html>

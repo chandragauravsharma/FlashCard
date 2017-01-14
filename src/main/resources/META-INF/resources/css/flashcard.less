@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #333;
+  border: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  padding: 50px;
+  display: table;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+article.flashcard {
+  margin: 0px auto;
+  border: 1px rgba(255, 255, 255, 0.03) solid;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  max-height: 600px;
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ label {
+    section.front {
+      height: 0%;
+    }
+    section.back {
+      height: 100%;
+    }
+  }
+  label {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  section {
+    display: block;
+    font: 40px 'Oswald' sans-serif;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+    transition: all 0.2s linear 0s;
+    overflow: scroll;
+    border: 0px;
+    &.front {
+      color: #BA1F53;
+      background: #DDD;
+      height: 100%;
+    }
+    &.back {
+      color: #0E0301;
+      background: #43C8F0;
+      height: 0%;
+    }
+  }
+}
+
+  .button {
+  	display: block;
+  	text-align:center;
+  	font: bold 16px/21px Helvetica;
+  	color:#fff;
+  	text-decoration: none;
+  	border-radius:6px;
+  	padding: 8px 16px;
+  	width: 12%;
+  	height: 6%;
+  }
+  
